@@ -286,7 +286,7 @@ body {
 
 .download {
    height: 485px;
-   background-color: #ad00ff;
+   background-color: rgba(173, 0, 255, 0.93);
    display: flex;
    flex-direction: column;
 }
