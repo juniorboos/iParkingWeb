@@ -51,8 +51,11 @@ function App() {
           </div>
         </div>
       <div className="about">
-        <h2 className="sectionTitle">About App</h2>
-        <img src={sectionTitle} alt="section svg"/>
+        <div className="sectionHeader">
+          <h2 className="sectionTitle">About App</h2>
+          <img className="sectionSvg" src={sectionTitle} alt="section svg"/>
+        </div>
+
       </div>
     </div>
   );

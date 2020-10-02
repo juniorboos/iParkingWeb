@@ -138,3 +138,24 @@ body {
 
    color: #FFFFFF;
 }
+
+.sectionHeader {
+   width: 100%;
+   margin-top: 90px;
+   text-align: center;
+}
+
+.sectionTitle {
+   font-family: Raleway;
+   font-style: normal;
+   font-weight: 800;
+   font-size: 48px;
+   line-height: 56px;
+   letter-spacing: 0.01em;
+   color: #000000;
+   margin-bottom: 9px;
+}
+
+.sectionSvg {
+   width: 180px;
+}
