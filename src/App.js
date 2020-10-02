@@ -8,6 +8,17 @@ import card2 from './assets/card2.svg';
 import card3 from './assets/card3.svg';
 import sectionTitle from './assets/sectionTitle.svg';
 import aboutScreens from './assets/aboutScreens.png';
+import featuresScreen from './assets/featuresScreen.png';
+import requestIcon from './assets/requestIcon.svg';
+import searchIcon from './assets/searchIcon.svg';
+import checkIcon from './assets/checkIcon.svg';
+import profileIcon from './assets/profileIcon.svg';
+import reservationsIcon from './assets/reservationsIcon.svg';
+import designIcon from './assets/designIcon.svg';
+import googleplay from './assets/googleplay.png';
+import appstore from './assets/appstore.png';
+
+
 
 function App() {
   return (
@@ -74,9 +85,73 @@ function App() {
             </p>
           </div>
         </div>
+      </div>
+      <div className="features">
+        <div className="sectionHeader">
+          <h2 className="sectionTitle">Features</h2>
+          <img className="sectionSvg" src={sectionTitle} alt="section svg"/>
+        </div>
+        <div className="featuresContent">
+          <div className="leftContainer">
+            <div className="leftFeature">
+              <div className="leftFeatureText">
+                <h3 className="featureTitle">Request spots</h3>
+                <h4 className="featureDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, iumod tempor incididunt</h4>
+              </div>
+              <img src={requestIcon} alt="request spots icon" className="featureIcon"/>
+            </div>
+            <div className="leftFeature">
+              <div className="leftFeatureText">
+                <h3 className="featureTitle">Search parkings</h3>
+                <h4 className="featureDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, iumod tempor incididunt</h4>
+              </div>
+              <img src={searchIcon} alt="search parkings icon" className="featureIcon"/>
+            </div>
+            <div className="leftFeature">
+              <div className="leftFeatureText">
+                <h3 className="featureTitle">Request spots</h3>
+                <h4 className="featureDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, iumod tempor incididunt</h4>
+              </div>
+              <img src={checkIcon} alt="check available spots icon" className="featureIcon"/>
+            </div>
+          </div>
+          <img className="featuresScreen" src={featuresScreen} alt="phone login"/>
+          <div className="rightContainer">
+            <div className="rightFeature">
+              <img src={profileIcon} alt="profile icon" className="featureIcon"/>
+              <div className="rightFeatureText">
+                <h3 className="featureTitle">View profile</h3>
+                <h4 className="featureDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, iumod tempor incididunt</h4>
+              </div>
+            </div>
+            <div className="rightFeature">
+              <img src={reservationsIcon} alt="see reservations icon" className="featureIcon"/>
+              <div className="rightFeatureText">
+                <h3 className="featureTitle">See reservations</h3>
+                <h4 className="featureDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, iumod tempor incididunt</h4>
+              </div>
+            </div>
+            <div className="rightFeature">
+              <img src={designIcon} alt="flat design icon" className="featureIcon"/>
+              <div className="rightFeatureText">
+                <h3 className="featureTitle">Flat design</h3>
+                <h4 className="featureDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, iumod tempor incididunt</h4>
+              </div>
+            </div>
+          </div>
+        </div>
         
       </div>
-
+      <div className="download">
+        <div className="sectionHeader">
+          <h2 className="sectionTitle" style={{color: "white"}}>Download</h2>
+          <img className="sectionSvg" style={{filter: "invert(100%) sepia(0%) saturate(18%) hue-rotate(354deg) brightness(104%) contrast(100%)"}} src={sectionTitle} alt="section svg"/>
+        </div>
+        <div className="platforms">
+          <img src={googleplay} alt="google play"/>
+          <img src={appstore} alt="google play"/>
+        </div>
+      </div>
     </div>
   );
 }

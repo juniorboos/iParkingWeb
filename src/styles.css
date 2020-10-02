@@ -171,7 +171,7 @@ body {
 
 .sectionHeader {
    width: 100%;
-   margin-top: 90px;
+   padding-top: 90px;
    text-align: center;
 }
 
@@ -188,4 +188,112 @@ body {
 
 .sectionSvg {
    width: 180px;
+}
+
+.features {
+   width: 100%;
+   height: 100vh;
+   background-color: #F1F1F1;
+   display: flex;
+   flex-direction: column;
+   padding-left: 150px;
+   padding-right: 150px;
+}
+
+.featuresContent {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   height: 100%;
+}
+
+.featuresScreen {
+   height: fit-content;
+   align-self: center;
+}
+
+.leftContainer {
+   width: 30%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-right: 30px;
+}
+
+.leftFeature {
+   display: flex;
+   flex-direction: row;
+   margin-top: 50px;
+   margin-bottom: 50px;
+
+}
+
+.leftFeatureText {
+   padding-right: 22px;
+   text-align: end;
+   padding-top: 16px;
+}
+
+.rightContainer {
+   width: 30%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-left: 30px;
+}
+
+.rightFeature {
+   display: flex;
+   flex-direction: row;
+   margin-top: 50px;
+   margin-bottom: 50px;
+
+}
+
+.rightFeatureText {
+   padding-left: 22px;
+   text-align: start;
+   padding-top: 16px;
+}
+
+.featureTitle {
+   font-family: Raleway;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 36px;
+   line-height: 42px;
+   letter-spacing: 0.01em;
+   color: #000000;
+   margin-bottom: 12px;
+}
+
+.featureDescription {
+   font-family: Raleway;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 21px;
+   letter-spacing: 0.01em;
+
+   color: #5C5C5C;
+}
+
+.featureIcon {
+   align-self: flex-start;
+}
+
+.download {
+   height: 485px;
+   background-color: #ad00ff;
+   display: flex;
+   flex-direction: column;
+}
+
+.platforms {
+   display: flex;
+   height: 100%;
+   align-items: center;
+   justify-content: space-evenly;
 }
