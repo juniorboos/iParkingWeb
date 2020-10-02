@@ -1,0 +1,88 @@
+* {
+   margin: 0;
+   padding: 0;
+   outline: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font: 400 14px Roboto, sans-serif;
+   background: #f0f0f5;
+   -webkit-font-smoothing: antialiased;
+}
+
+.header {
+   display: flex;
+   width: 100%;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   /* width: 100%; */
+   height: 80px;
+   /* border: 1px black solid; */
+   background-color: #ad00ff;
+   position: fixed;
+   top: 0;
+}
+
+.logo {
+   margin-left: 40px;
+   height: 50%;
+}
+
+.headerItems {
+   display: flex;
+   flex-direction: row;
+   margin-right: 40px;
+   /* justify-content: space-between; */
+   /* border: 1px black solid; */
+}
+
+.headerItem {
+   padding-right: 32px;
+   color: white;
+}
+
+.mainContainer {
+   background-color: white;
+}
+
+.home {
+   display: flex;
+   background-image: url('./assets/location.svg');
+   background-repeat: no-repeat;
+   background-position-y: center;
+   width: 100%;
+   height: 100vh;
+   background-color: #ad00ff;
+   justify-content: space-around;
+   /* padding-left: 150px; */
+}
+
+.about {
+   width: 100%;
+   height: 100vh;
+   background-color: #FFF;
+}
+
+.iphoneHome {
+   margin-top: 100px;
+   height: fit-content;
+   align-self: center;
+   /* align-self: center; */
+}
+
+.homeTitle {
+   width: 570px;
+   font-family: Raleway;
+   font-style: normal;
+   font-weight: 800;
+   font-size: 64px;
+   line-height: 75px;
+   display: flex;
+   align-items: center;
+   text-align: right;
+   letter-spacing: 0.01em;
+
+   color: #FFFFFF;
+}
