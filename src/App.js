@@ -51,29 +51,32 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="sectionHeader">
-        <h2 className="sectionTitle">About App</h2>
-        <img className="sectionSvg" src={sectionTitle} alt="section svg"/>
-      </div>
       <div className="about">
-        <img className="aboutScreens" src={aboutScreens} alt="iphone screens"/>
-        <div className="aboutText">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiuiosmod terttmpor incididunt
-            ut labore et dolore magna aliqua. enim ad minim veniam, quis nostrud exercitation ullamco 
-            laboris nisi ut aliquip ex ea commodo consequat. doliuor in reprehenderit in voluptate velit
-            esse dolore eu fugiat nulla pariatur. cdatat non proident
-          </p>
-          <br/>
-          <br/>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tuiempor incididunt 
-            ut labore et dolore magna aliqua. enim ad minim veniam, quis nostrud exercitation ullamco 
-            laboris nisi ut aliquip
-          </p>
+        <div className="sectionHeader">
+          <h2 className="sectionTitle">About App</h2>
+          <img className="sectionSvg" src={sectionTitle} alt="section svg"/>
         </div>
-
+        <div className="aboutContent">
+          <img className="aboutScreens" src={aboutScreens} alt="iphone screens"/>
+          <div className="aboutText">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiuiosmod terttmpor incididunt
+              ut labore et dolore magna aliqua. enim ad minim veniam, quis nostrud exercitation ullamco 
+              laboris nisi ut aliquip ex ea commodo consequat. doliuor in reprehenderit in voluptate velit
+              esse dolore eu fugiat nulla pariatur. cdatat non proident
+            </p>
+            <br/>
+            <br/>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tuiempor incididunt 
+              ut labore et dolore magna aliqua. enim ad minim veniam, quis nostrud exercitation ullamco 
+              laboris nisi ut aliquip
+            </p>
+          </div>
+        </div>
+        
       </div>
+
     </div>
   );
 }

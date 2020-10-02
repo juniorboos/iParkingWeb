@@ -113,13 +113,19 @@ body {
 
 .about {
    width: 100%;
-   height: 80vh;
+   height: 100vh;
    background-color: #FFF;
+   display: flex;
+   flex-direction: column;
+   padding-left: 150px;
+   padding-right: 150px;
+}
+
+.aboutContent {
    display: flex;
    flex-direction: row;
    justify-content: space-around;
-   padding-left: 150px;
-   padding-right: 150px;
+   height: 100%;
 }
 
 .aboutScreens {
