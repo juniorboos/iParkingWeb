@@ -35,6 +35,7 @@ A web application for users who want to know more about the iParking mobile app.
 * [HTML](https://www.w3schools.com/html/html_intro.asp)
 * [CSS](https://www.w3schools.com/css/css_intro.asp)
 * [CSS Animations](https://www.w3schools.com/css/css3_animations.asp)
+* [Figma](https://www.figma.com/file/k3uKcueQoDuStP2xQpNNPk/iParking-Web?node-id=0%3A1)
 
 
 <!-- CONTACT -->
