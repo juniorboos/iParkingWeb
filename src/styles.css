@@ -81,14 +81,14 @@ body {
 
 .home {
    display: flex;
-   background-image: url('./assets/location.svg');
+   background: url('./assets/location.svg'), linear-gradient(174.53deg, #AD00FF 18.9%, #FF007A 129.36%);
+
    background-repeat: no-repeat;
-   background-position-y: center;
+   background-position-y: 40%;
    width: 100%;
    height: 120vh;
    flex-direction: column;
-   background-color: #ad00ff;
-}
+   }
 
 .homeItems {
    display: flex;
