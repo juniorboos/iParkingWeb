@@ -178,11 +178,25 @@ body {
    color: #616161;
 }
 
-.iphoneHome {
+.iphoneHomeDiv {
    margin-top: 100px;
    height: fit-content;
    align-self: center;
-   /* align-self: center; */
+   animation: iphone 5s ;
+}
+
+.iphoneHome {
+   position: relative;
+   animation: iphone 5s ease-out;
+}
+
+@keyframes iphone {
+   from {
+      margin-left: -1000px;
+   }
+   to {
+      margin-left: 0px;
+   }
 }
 
 .homeTitle {
