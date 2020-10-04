@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './styles.css';
 
 import logo from './assets/logo.svg';
@@ -18,6 +18,9 @@ import designIcon from './assets/designIcon.svg';
 import googleplay from './assets/googleplay.png';
 import appstore from './assets/appstore.png';
 
+
+const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
+
 const SplitText = (props) => {
   return(
     <span aria-label={props.copy} role="heading">
@@ -36,17 +39,26 @@ const SplitText = (props) => {
 }
 
 function App() {
+
+  const focusHome = useRef(null);
+  const focusAbout = useRef(null);
+  const focusFeatures = useRef(null);
+  const focusDownload = useRef(null);
+  const executeScroll = (route) => {
+    scrollToRef(route);
+  } 
+
   return (
     <div className="mainContainer">
       <div className="header">
-        <img className="logo" src={logo} alt="iParking logo"/>
+        <img className="logo" src={logo} alt="iParking logo" onClick={() => executeScroll(focusHome)}/>
         <div className="headerItems">
-          <h4 className="headerItem">About</h4>
-          <h4 className="headerItem">Features</h4>
-          <h4 className="headerItem">Download</h4>
+          <h4 className="headerItem" onClick={() => executeScroll(focusAbout)}>About</h4>
+          <h4 className="headerItem" onClick={() => executeScroll(focusFeatures)}>Features</h4>
+          <h4 className="headerItem" onClick={() => executeScroll(focusDownload)}>Download</h4>
         </div>
       </div>
-      <div className="home">
+      <div className="home" ref={focusHome}>
         <div className="homeItems">
           <img className="iphoneHome" src={iphoneHome} alt="Iphone homepage"/>
           {/* <h1 className="homeTitle">a solution for Smart Parkings</h1> */}
@@ -78,7 +90,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="about">
+      <div className="about" ref={focusAbout}>
         <div className="sectionHeader">
           <h2 className="sectionTitle">About App</h2>
           <img className="sectionSvg" src={sectionTitle} alt="section svg"/>
@@ -102,7 +114,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="features">
+      <div className="features" ref={focusFeatures}>
         <div className="sectionHeader">
           <h2 className="sectionTitle">Features</h2>
           <img className="sectionSvg" src={sectionTitle} alt="section svg"/>
@@ -158,7 +170,7 @@ function App() {
         </div>
         
       </div>
-      <div className="download">
+      <div className="download" ref={focusDownload}>
         <div className="sectionHeader">
           <h2 className="sectionTitle" style={{color: "white"}}>Download</h2>
           <img className="sectionSvg" style={{filter: "invert(100%) sepia(0%) saturate(18%) hue-rotate(354deg) brightness(104%) contrast(100%)"}} src={sectionTitle} alt="section svg"/>

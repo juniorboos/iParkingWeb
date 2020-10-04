@@ -3,6 +3,7 @@
    padding: 0;
    outline: 0;
    box-sizing: border-box;
+   scroll-behavior: smooth;
 }
 
 body {
@@ -37,6 +38,8 @@ body {
      }
  }
 
+
+
 .header {
    position: fixed;
    top: 0;
@@ -55,6 +58,7 @@ body {
 .logo {
    margin-left: 40px;
    height: 50%;
+   cursor: pointer;
 }
 
 .headerItems {
@@ -66,7 +70,8 @@ body {
 }
 
 .headerItem {
-   padding-right: 32px;
+   cursor: pointer;
+   margin-right: 32px;
    color: white;
 }
 
