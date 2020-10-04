@@ -18,7 +18,22 @@ import designIcon from './assets/designIcon.svg';
 import googleplay from './assets/googleplay.png';
 import appstore from './assets/appstore.png';
 
-
+const SplitText = (props) => {
+  return(
+    <span aria-label={props.copy} role="heading">
+      {props.copy.split("").map(function(char, index){
+        let style = {"animation-delay": (0.5 + index / 10) + "s"}
+        return <span
+          aria-hidden="true"
+          key={index}
+          style={style}>
+          {char}
+        </span>;
+      })}
+    </span>
+  )
+  
+}
 
 function App() {
   return (
@@ -34,7 +49,8 @@ function App() {
       <div className="home">
         <div className="homeItems">
           <img className="iphoneHome" src={iphoneHome} alt="Iphone homepage"/>
-          <h1 className="homeTitle">a solution for Smart Parkings</h1>
+          {/* <h1 className="homeTitle">a solution for Smart Parkings</h1> */}
+          <h1 className="homeTitle"><SplitText copy="a solution for Smart Parkings" /></h1>
         </div>
         
 
