@@ -95,7 +95,9 @@ body {
    flex-direction: row;
    width: 100%;
    height: 100vh;
-   justify-content: space-around;
+   justify-content: space-between;
+   padding-left: 10%;
+   padding-right: 10%;
 }
 
 .cards {
@@ -182,7 +184,6 @@ body {
    margin-top: 100px;
    height: fit-content;
    align-self: center;
-   animation: iphone 5s ;
 }
 
 .iphoneHome {
